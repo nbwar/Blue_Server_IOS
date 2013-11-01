@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface NWViewController : UIViewController
+@interface NWViewController : UIViewController <CBPeripheralManagerDelegate>
+
+@property (strong, nonatomic) CBPeripheralManager *manager;
 
 @end
